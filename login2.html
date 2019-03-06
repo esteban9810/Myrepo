@@ -2,11 +2,15 @@
 
   <head>
     <title> Mi Tienda </title>
+    <link rel="icon" type="image/ico" href="icons/danger.png"/>
   </head>
 
   <body background="images/fondo.jpg">  <br>
     <br>
-<table border="0" align="center">
+
+  <form name="frm1" action="menu.html" method="post">
+
+    <table border="0" align="center">
     <tr>
     <td align="center"> <font face="verdana" size="5"  color="white"<b><b>BIENVENIDO</b></b></font> <br> </td>
     </tr>
@@ -24,7 +28,7 @@
     </tr>
 
     <tr>
-    <td> <input type="text"></td>
+    <td> <input type="text" name="user" placeholder="Ingrese Usuario" required></td>
     </tr>
 
     <tr>
@@ -32,7 +36,7 @@
     </tr>
 
     <tr>
-    <td><input type="password"><br> <br> </td>
+    <td><input type="password" name="password" placeholder="Ingrese Contraseña" required><br> <br> </td>
     </tr>
 
     <tr>
@@ -49,6 +53,7 @@
     <a href="https://twitter.com/?lang=es" target="_BLANK"><img src="icons/twitter.png"width="40" ></td><a/>
     </tr>
 
+  </form>
 
   </body>
 
