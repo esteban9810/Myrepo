@@ -8,7 +8,7 @@
   <body background="images/fondo.jpg">
 
   <form name="frm1" action="menu.html" method="post">
-  <center> <font face="verdana" size="7"  color="gold"><b><b> <b>Formulario de Registro</b></b></b></font></center> <br>
+  <center> <font face="verdana" size="6"  color="gold"><b><b> <b>Formulario de Registro</b></b></b></font></center>
 
     <table border="0" align="center">
 
@@ -36,8 +36,7 @@
 
       <tr>
         <td> <font face="verdana" size="3" color="white"<b><b> N° de Identificaciòn:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b> </font> <br> <br></td>
-        <td> <input type="number" name="Numero"  placeholder="Ingrese N° de Identificaciòn" required><br> <br> </td>
-      </tr>
+<td> <input type="text" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57) event.returnValue = false; required" placeholder="Nro Identificacion" required><br> <br></td>      </tr>
 
       <tr>
         <td> <font face="verdana" size="3" color="white"<b><b> Genero: <font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
@@ -51,12 +50,13 @@
 
       <tr>
         <td> <font face="verdana" size="3" color="white"<b><b> Telefono: </b></b></font> <br>  <br> </td>
-        <td> <input type="tel"  placeholder="Ingrese su Telefono" > <br> <br> </td>
+        <td> <input type="text" value="" maxlength="7"onkeypress="if (event.keyCode < 45 || event.keyCode >57) event.returnValue = false; required" placeholder="Nro Identificacion" required><br> <br></td>      </tr>
+
       </tr>
 
       <tr>
         <td> <font face="verdana" size="3" color="white"<b><b> Celular:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
-        <td> <input type="text" name="user" placeholder="Ingrese su Celular" required> <br> <br> </td>
+        <td> <input type="text" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57) event.returnValue = false; required" placeholder="Nro Identificacion" required><br> <br></td>      </tr>
       </tr>
 
       <tr>
@@ -77,7 +77,18 @@
 
       <tr>
         <td> <font face="verdana" size="3" color="white"<b><b> Ciudad:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b></font> <br> <br> </td>
-        <td> <input type="text" name="user" placeholder="Ingrese Su Ciudad" required> <br> <br> </td>
+        <td> <select name="OS">
+          <option value="1">Pasto</option>
+          <option value="2">Tuquerres</option>
+          <option value="3">La union</option>
+          <option value="4">Tumaco</option>
+          <option value="5">Consaca</option>
+          <option value="6">Ipiales</option>
+          <option value="7">Policarpa</option>
+          <option value="8">La florida</option>
+          <option value="9">Nariño</option>
+          <option value="10">Yaquanquer</option></select>
+        <br> <br> </td>
       </tr>
 
       <tr>
