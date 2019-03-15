@@ -5,27 +5,25 @@
     <link rel="icon" type="image/ico" href="icons/danger.png"/>
   </head>
 
-  <body background="images/fondo.jpg">  <br>
-    <br>
+  <body background="images/fondo.jpg">
 
   <form name="frm1" action="menu.html" method="post">
-
-    <font face="verdana" size="5"  color="white" <align="center"> <b>Formulario de Registro</b></font></h1> <br><align="center"  >
+  <center> <font face="verdana" size="7"  color="gold"><b><b> <b>Formulario de Registro</b></b></b></font></center> <br>
 
     <table border="0" align="center">
 
       <tr>
-      <td> <font face="verdana" size="3" color="white"<b><b> Nombres: * </b></b></td></font>
-      <td> <input type="text" name="user" placeholder="Ingrese sus Nombre" required></td>
+      <td> <font face="verdana" size="3" color="white"<b><b> Nombres: <font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b></font> <br> <br> </td>
+      <td> <input type="text" name="user" placeholder="Ingrese sus Nombres" required onkeyup = "this.value=this.value.toUpperCase()" > <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Apellidos: * </b></b></td></font>
-        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required></td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Apellidos:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b> </font> <br> <br></td>
+        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required onkeyup = "this.value=this.value.toUpperCase()"><br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Tipo de Identificaciòn: * </b></b></td></font>
+        <td> <font face="verdana" size="3" color="white"<b><b> Tipo de Identificaciòn:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
         <td> <select name="Identificaciòn">
             <option >Identificaciòn</option>
             <option value="1">TI</option>
@@ -33,31 +31,36 @@
             <option value="3">CE</option>
             <option value="10">RC</option>
             <option value="11">PS</option></select>
-        </td>
+        <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Genero: * </b></b></td></font>
+        <td> <font face="verdana" size="3" color="white"<b><b> N° de Identificaciòn:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b> </font> <br> <br></td>
+        <td> <input type="number" name="Numero"  placeholder="Ingrese N° de Identificaciòn" required><br> <br> </td>
+      </tr>
+
+      <tr>
+        <td> <font face="verdana" size="3" color="white"<b><b> Genero: <font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
         <td><select name="Genero" >
           <option >Genero</option>
             <option value="1">Masculino</option>
             <option value="2">Femenino</option>
             <option value="3">Otro</option></select>
-        </td>
+        <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Telefono: </b></b></td></font>
-        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required></td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Telefono: </b></b></font> <br>  <br> </td>
+        <td> <input type="tel"  placeholder="Ingrese su Telefono" > <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Celular: * </b></b></td></font>
-        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required></td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Celular:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
+        <td> <input type="text" name="user" placeholder="Ingrese su Celular" required> <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Departamento: * </b></b></td></font>
+        <td> <font face="verdana" size="3" color="white"<b><b> Departamento:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
         <td><select name="Identificaciòn" >
             <option value="1">Amazonas</option>
             <option value="2">Antioquia</option>
@@ -69,35 +72,38 @@
             <option value="8">Caquetá</option>
             <option value="9">Cauca</option>
             <option value="10">Nariño</option></select>
-        </td>
+        <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Ciudad: * </b></b></td></font>
-        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required></td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Ciudad:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b></font> <br> <br> </td>
+        <td> <input type="text" name="user" placeholder="Ingrese Su Ciudad" required> <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Correo Electronico: * </b></b></td></font>
-        <td> <input type="text" name="user" placeholder="Ingrese sus Apellidos" required></td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Correo Electronico:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b> </font> <br> <br> </td>¿
+        <td> <input type="text" name="user" placeholder="Ingrese su Correo Electronico" required> <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Contraseña: * </b></b></td></font>
-      <td><input type="password" name="password" placeholder="Ingrese Contraseña" required><</td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Contraseña:<font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
+      <td><input type="password" name="password" placeholder="Ingrese Contraseña" required> <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Confirmar Contraseña: * </b></b></td></font>
-      <td><input type="password" name="password" placeholder="Ingrese Contraseña" required><</td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Confirmar Contraseña: <font face="verdana" size="3" color="red"<b><b>*</b></b> </font> </b></b> </font> <br> <br> </td>
+      <td><input type="password" name="password" placeholder="Ingrese Contraseña" required> <br> <br> </td>
       </tr>
 
       <tr>
-        <td> <font face="verdana" size="3" color="white"<b><b> Foto: * </b></b></td></font>
-        <td><input type="password" name="password" placeholder="Ingrese Contraseña" required>
-            <input type="submit" value="Examinar">
-          <</td>
+        <td> <font face="verdana" size="3" color="white"<b><b> Foto: <font face="verdana" size="3" color="red"<b><b>*</b></b> </font></b></b> </font> </td>
+        <td><input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple></td>
       </tr>
+
+    </table>
+    <br>
+
+    <center><font face="verdana" size="3" color="white"<b><b><input type="submit" value="Registrarse"></font>/center>
 
     </form>
 
