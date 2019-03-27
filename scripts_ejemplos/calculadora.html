@@ -1,0 +1,62 @@
+<html>
+
+  <head>
+    <title> CALCULADORA </title>
+    <link rel="icon" type="image/ico" href="icons/danger.png"/>
+  </head>
+
+  <body BGCOLOR="#717070">  <br>
+    <br>
+
+  <form name="frm1" action="calculadora.php" method="post">
+
+    <center> <font face="verdana" size="5"  color="black"<b><b>CALCULADORA BASICA</b></b></font> <br><br><br></center>
+
+    <table border="0" align="center">
+
+    <tr>
+    <td> <font face ="verdana"  size="2" color="white" <b><b>Digite el primer numero:</b></b></font></td>
+    </tr>
+
+    <tr>
+    <td> <input type="text" name="num1" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57)
+         event.returnValue = false; required" placeholder="Digite un numero" required><br> <br></td>
+     </tr>
+
+
+    <tr>
+    <td> <font face ="verdana"  size="2" color="white" <b><b>Digite el Segundo numero:</b></b></font></td>
+    </tr>
+
+    <tr>
+    <td> <input type="text" name="num2" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57)
+         event.returnValue = false; required" placeholder="Digite un numero" required><br> <br></td>
+     </tr>
+
+    <tr>
+    <td> <font face ="verdana"  size="2" color="white" <b><b>Seleccione Operacion:</b></b></font></td>
+    </tr>
+
+    <tr>
+        <td> <select name="operar">
+          <option value="0"></option>
+          <option value="1">Sumar</option>
+          <option value="2">Restar</option>
+          <option value="3">Multiplicar</option>
+          <option value="4">Dividir</option>
+          <option value="5">Potencia</option>
+          <option value="6">Raiz Cuadrada</option>
+          <option value="7">Todas las Operaciones</option></select>
+       </td>
+    </tr>
+
+    <tr>
+    <td><br> <br><input type="submit" value="CALCULAR"></td>
+    </tr>
+
+
+  </form>
+
+  </body>
+
+</html>
