@@ -106,6 +106,13 @@ echo "</table>";
 echo "<br><br>";
 echo "------------------------------------------------------------------------------------------------------------------------";
 echo "<br><br>";
+echo "9). Escriba un Script en PHP que genere aleatoriamente 10 números
+enteros positivos y negativos, y los muestre por pantalla, y visualice
+además el siguiente reporte en una tabla HTML:
+- Total de números positivos pares generados.
+- Total de números positivos impares generados.
+- Total de números negativos pares generados.
+- Total de números negativos impares generados<br><br>";
 $parposi=0;
 $imparposi=0;
 $parneg=0;
@@ -136,4 +143,103 @@ echo "</table>";
   echo "<tr><td> Total de Numeros negativos impares: </td> <td>".$imparneg."</td></tr>";
 echo "</table>";
 
+echo "<br><br>";
+echo "------------------------------------------------------------------------------------------------------------------------";
+echo "<br><br>";
  ?>
+
+ <html>
+
+     <head>
+        <title> EJERCICIOS </title>
+        </head>
+
+     <body bgcolor="gray">  <br>
+      <form name=frm1  method="POST">
+          <table border="1">
+            <tr>
+                <td align=center> <font face="Arial" size="4" color="black"><b>TABLA DE MULTIPLICAR</b></font> </td>
+            </tr>
+
+            <tr>
+               <td font face="Arial" size="3" > Digite numero: <font color="codigocolor"></font> </font> </td>
+            </tr>
+
+            <tr>
+              <td> <input type="text" name="num1" value="" maxlength="10"onkeypress="if (event.keyCode < 45 || event.keyCode >57) event.returnValue = false; required" placeholder="Digite un numero" required></td></tr>
+            </tr>
+
+          </table>
+          <BR>
+            <input  type="submit" value="GENERAR TABLA">
+
+        </form>
+     </body>
+ </html>
+
+
+ <?php
+
+$n1=$_POST ["num1"];
+echo "<BR><BR><table border =1>";
+echo "TABLA DE MULTIPLICAR";
+  for($i=1; $i<=10; $i++)
+  {
+    echo "<tr><td >$n1</td>
+              <td >x</td>
+              <td >$i</td>
+              <td >=</td>
+              <td > ". ($i*$n1) . "</td>
+          </tr>";
+  }
+  echo "</table> ";
+
+
+  echo "<br><br>Numeros Descendentes de: ".$n1;
+  echo "<table border =1>";
+
+  $i=$n1;
+  while ($i > 0) {
+    echo "<td>".$i."</td>";
+    $i--; //$i = $i
+  }
+  echo "</table>";
+
+
+  echo "<br><br>Numeros Ascendentes de: ".$n1;
+  echo "<table border =1>";
+  $i=1;
+  while ($i <= $n1) {
+    echo "<td>".$i."</td>";
+    $i++; //$i = $i
+  }
+  echo "</table>";
+
+
+  echo "<br><b>Lista de numeros acendente y decendente</b></br>";
+  echo "<table border=1 cellpadding='9' style=float:left>";
+  $i=1;
+   while  ($i<=$n1){
+    if(($i%2)==0){
+     echo "<tr><td>".$i."</td></tr>";
+   }
+   else{
+     echo "<tr><td>".$i."</td></tr>";
+   }
+   $i++;
+  }
+  echo "</table>";
+  echo "<table border=1 cellpadding='9' style=float:left:200px >";
+  $i = $n1;
+  while  ($i>0){
+   if(($i%2)==0){
+     echo "<tr><td>".$i."</td></tr>";
+   }
+   else{
+     echo "<tr><td>".$i."</td></tr>";
+   }
+   $i--;
+  }
+  echo "</table>";
+
+  ?>
