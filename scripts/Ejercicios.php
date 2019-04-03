@@ -1,3 +1,5 @@
+<center><font face="Arial" size="5" color="black"><b>TALLER</b></font> </td></center>
+Presentado por: RICARDO ESTEBAN AGREDA<BR><BR>
 <?php
 echo "<b> 1). Lista de números del 1 al 10 Sin hacer uso de ninguna estructura tipo bucle</b><br><br>";
 echo "1 ";
@@ -144,7 +146,10 @@ echo "</table>";
 echo "</table>";
 
 echo "<br><br>";
+
 echo "------------------------------------------------------------------------------------------------------------------------";
+echo "<br><br>";
+echo "10)";
 echo "<br><br>";
  ?>
 
@@ -154,7 +159,7 @@ echo "<br><br>";
         <title> EJERCICIOS </title>
         </head>
 
-     <body bgcolor="gray">  <br>
+     <body bgcolor="#D3BEBE">  <br>
       <form name=frm1  method="POST">
           <table border="1">
             <tr>
